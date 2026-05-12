@@ -1,5 +1,5 @@
 ---
-title: "Augmentum - Artic Carbon - Sermilik fjord plankton interaction network"
+title: "Augmentum - Artic Carbon - Interactive microbial networks of Greenland fjords"
 author: "Nathan Hubot"
 format:
   html:
@@ -268,11 +268,13 @@ make_fjord_network("Tunulliarfik", degree_threshold = 7)
 
 # Interpretation
 
-The fjord-specific cross-domain networks reveal structured associations between planktonic prokaryotic and eukaryotic communities across the Greenland fjord systems. In all three fjords, prokarotic and eukaryotic taxa form interconnected networks rather than separate clusters, suggesting strong ecological coupling within the microbial plankton community.
+The fjord-specific cross-domain networks reveal structured associations between planktonic prokaryotic and eukaryotic communities across the Greenland fjord systems. In all three fjords, prokarotic and eukaryotic taxa form interconnected networks rather than separate clusters, suggesting ecological coupling within the microbial plankton community.
 
-Across the networks, several bacterial taxa occupy central and highly connected positions, acting as potential ecological hubs linking multiple eukaryotic groups. Many of these taxa belong to common marine heterotrophic or particle-associated bacterial lineages frequently associated with phytoplankton-derived organic matter and bloom dynamics. Eukaryotic taxa, including dinoflagellates and prasinophyte-associated groups, are distributed throughout the networks and are often connected through shared bacterial hubs.
+Across the networks, several prokarotic taxa occupy central and highly connected positions, acting as potential ecological hubs linking multiple eukaryotic groups. Many of these taxa belong to common marine heterotrophic or particle-associated bacterial lineages frequently associated with phytoplankton-derived organic matter and bloom dynamics. Eukaryotic taxa are distributed throughout the networks and are often connected through shared bacterial hubs.
 
-The overall structure of the networks is moderately modular, with smaller subnetworks interconnected through highly connected taxa. Such organisation is consistent with complex microbial ecosystems in which multiple ecological niches remain linked through broader community-scale interactions. The repeated appearance of highly connected bacterial connector taxa across fjords suggests that prokaryotic communities may play an important integrative role in structuring Arctic microbial food webs and mediating carbon cycling processes.
+One particularly notable feature is the recurrent prominence of *Candidatus Nitrosopumilus*, which appears as one of the largest and most highly connected nodes across all fjord networks. Members of this **archaeal lineage** are widespread **marine ammonia oxidisers** and play a major role in the nitrogen cycle by converting ammonia into nitrite. Their central position within the networks suggests that nitrifying archaea may represent important ecological connectors within Greenland fjord microbial communities. The repeated association of *Candidatus Nitrosopumilus* with diverse taxa may reflect coupling between nitrogen cycling processes, primary production, and organic matter remineralisation within these fjord ecosystems.
 
-Although each fjord displays its own network topology and dominant taxa, the overall organisation remains remarkably consistent, supporting the idea that cross-domain microbial coupling is a general feature of these Arctic fjord ecosystems.
+The overall structure of the networks is moderately modular, with smaller subnetworks interconnected through highly connected taxa. Such organisation is consistent with complex microbial ecosystems in which multiple ecological niches remain linked through broader community-scale interactions. The repeated appearance of highly connected bacterial connector taxa across fjords suggests that prokaryotic communities may play an important integrative role in structuring Greenland microbial food webs and mediating carbon cycling processes.
+
+Although each fjord displays its own network topology and dominant taxa, the overall organisation remains remarkably consistent, supporting the idea that cross-domain microbial coupling is a general feature of these Greenland fjord ecosystems.
 
