@@ -1,6 +1,6 @@
-".Rproj.user/"
-
-/.quarto/
+.Rproj.user/
+.quarto/
 **/*.quarto_ipynb
-.Rproj.user
-.positai
+.Rhistory
+.RData
+.posit/
