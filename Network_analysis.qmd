@@ -17,30 +17,31 @@ execute:
 
 # Introduction
 
-This page presents an exploratory interactive network showing inferred associations between planktonic **prokaryotic** and **eukaryotic** communities in **Sermilik Fjord**, southeast Greenland, sampled during the Augmentum / National Oceanography Centre (NOC) Arctic Carbon research cruise aboard the *MY Akula*.
+This page presents exploratory interactive networks showing inferred associations between planktonic **prokaryotic** and **eukaryotic** communities across three Greenland fjord systems: **Sermilik**, **Iterdalk**, and **Tunulliarfik**. Samples were collected during the Augmentum / National Oceanography Centre (NOC) Arctic Carbon research cruise aboard the *MY Akula*.
 
-::: {.columns style="display:flex; gap: 2rem; align-items:center;"}
+![](files/AKULA.jpg){fig-cap="MY Akula provided by Augmentum" width="50%"}
 
-::: {.column style="flex: 0 0 58%;"}
+::: {.columns style="display:flex; gap: 3rem; align-items:flex-start;"}
 
-![](files/AKULA.jpg){fig-cap="Research vessel *MY Akula* used during the Augmentum Arctic Carbon expedition." width="100%"}
-
-:::
-
-::: {.column style="flex: 0 0 38%;"}
-
+::: {.column style="flex: 0 0 35%; max-width: 40%;"}
 ![](files/Sermilik_fjord.png){
-fig-cap="Map of Sermilik Fjord showing the sampling stations included in the network analysis."
-width="100%"
+  fig-cap="Sermilik Fjord showing sampling stations"
+  style="width:100%; height:auto;"
 }
+:::
 
+::: {.column style="flex: 0 0 65%; max-width: 60%;"}
+![](files/Fjord_Iterdalk_Tunulliarfik_Ocean_station_map_large.png){
+  fig-cap="Fjords Iterdalk and Tunulliarfik with oceanographic stations"
+  style="width:100%; height:auto;"
+}
 :::
 
 :::
 
-The network was inferred from paired 16S and 18S metabarcoding datasets and aims to explore potential ecological coupling between bacterial and microbial eukaryotic taxa across the fjord system. The associations shown here do not necessarily represent direct biological interactions, but rather statistical co-occurrence patterns that may reflect shared environmental preferences, bloom dynamics, trophic relationships, or broader ecosystem structuring processes.
+The networks were inferred from paired 16S and 18S metabarcoding datasets and aim to explore potential ecological coupling between bacterial and microbial eukaryotic taxa within Arctic fjord ecosystems. The associations shown here do not necessarily represent direct biological interactions, but rather statistical co-occurrence patterns that may reflect shared environmental preferences, bloom dynamics, trophic relationships, or broader ecosystem structuring processes.
 
-Only the Sermilik fjord subnetwork is shown here. To make the visualisation easier to explore, the network is filtered to retain the more connected taxa within the fjord-specific subgraph.
+For each fjord, a core cross-domain subnetwork is displayed, highlighting the most connected taxa and their inferred associations. Comparing these fjord-specific subnetworks provides an exploratory view of how microbial community organisation may vary among fjord environments with different hydrographic and ecological characteristics.
 
 # How to use the graph
 
@@ -253,14 +254,25 @@ visNetwork(nodes, edges, height = "850px", width = "100%") %>%
 make_fjord_network("Sermilik", degree_threshold = 7)
 ```
 
+# Iterdalk fjord network
+
+```{r}
+make_fjord_network("Iterdalk", degree_threshold = 7)
+```
+
+# Tunulliarfik fjord network
+
+```{r}
+make_fjord_network("Tunulliarfik", degree_threshold = 7)
+```
+
 # Interpretation
 
-The Sermilik fjord cross-domain network reveals a structured pattern of associations between planktonic prokaryotes and eukaryotes. Rather than forming two separate communities, the network shows extensive interconnection between bacterial and eukaryotic taxa, suggesting coordinated ecological dynamics within the fjord ecosystem.
+The fjord-specific cross-domain networks reveal structured associations between planktonic prokaryotic and eukaryotic communities across the Greenland fjord systems. In all three fjords, prokarotic and eukaryotic taxa form interconnected networks rather than separate clusters, suggesting strong ecological coupling within the microbial plankton community.
 
-Several highly connected bacterial taxa occupy central positions in the network, including members of the *Candidatus Nitrosopumilus*, *OM27 clade*, *RS62 marine group*, *Octadecabacter*, and *Pelagibacillus* groups. These taxa likely represent ecological hubs linking multiple eukaryotic lineages and may reflect organisms responding strongly to phytoplankton-derived organic matter, nutrient gradients, or bloom-associated environmental conditions.
+Across the networks, several bacterial taxa occupy central and highly connected positions, acting as potential ecological hubs linking multiple eukaryotic groups. Many of these taxa belong to common marine heterotrophic or particle-associated bacterial lineages frequently associated with phytoplankton-derived organic matter and bloom dynamics. Eukaryotic taxa, including dinoflagellates and prasinophyte-associated groups, are distributed throughout the networks and are often connected through shared bacterial hubs.
 
-Eukaryotic taxa are distributed throughout the network rather than forming isolated modules. Dinoflagellates such as *Dinophysis*, *Pentapharsodinium*, *Torodinium*, and *Pseudocochattonella*, together with several prasinophyte-associated taxa, appear connected to multiple bacterial groups. This pattern is consistent with tight coupling between microbial eukaryotes and heterotrophic or particle-associated bacteria in Arctic fjord systems.
+The overall structure of the networks is moderately modular, with smaller subnetworks interconnected through highly connected taxa. Such organisation is consistent with complex microbial ecosystems in which multiple ecological niches remain linked through broader community-scale interactions. The repeated appearance of highly connected bacterial connector taxa across fjords suggests that prokaryotic communities may play an important integrative role in structuring Arctic microbial food webs and mediating carbon cycling processes.
 
-The network also displays a moderately modular structure, with smaller clusters connected through central bacterial hubs. Such organisation may indicate local ecological niches embedded within a larger interconnected microbial community. The prominence of prokaryotic connector taxa suggests that bacteria may play an important integrative role within the Sermilik planktonic ecosystem, potentially mediating carbon processing and microbial succession during bloom events.
+Although each fjord displays its own network topology and dominant taxa, the overall organisation remains remarkably consistent, supporting the idea that cross-domain microbial coupling is a general feature of these Arctic fjord ecosystems.
 
-Importantly, the inferred links shown here represent statistical associations rather than confirmed biological interactions. The network should therefore be interpreted as a hypothesis-generating framework that highlights candidate ecological relationships for future investigation.
