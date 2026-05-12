@@ -52,7 +52,7 @@ You can interact with the network directly:
 - click a node to highlight its nearest neighbours;
 - use the search box to find a specific taxon;
 - larger nodes represent taxa with more network connections;
-- colours distinguish prokaryotic and eukaryotic taxa.
+- colours distinguish prokaryotic (blue) and eukaryotic (orange) taxa.
 
 # Sermilik fjord network
 
