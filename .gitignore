@@ -4,3 +4,6 @@
 .Rhistory
 .RData
 .posit/
+.positai
+
+/.quarto/
